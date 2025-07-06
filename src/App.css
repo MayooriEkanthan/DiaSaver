@@ -216,13 +216,8 @@ code {
     
   }
 body {
-	background: 
-		  radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) 0 calc(128px/2),
-		  radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) calc(128px/2) 0,
-		  radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
-		  radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
-		  #81bcc82b;
-	background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+  background-color: #f8f9fa; /* a soft gray-blue tone */
+
 }
 /* App.css */
 
