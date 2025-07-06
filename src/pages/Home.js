@@ -60,11 +60,19 @@ function Home() {
 
   return (
     <div className="home-page">
+      {/* ✅ Background video behind all */}
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src="/bg-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* ✅ Content */}
       <h2>
         Welcome to <strong>DiaSaver</strong>
       </h2>
       <p className="subtitle">
-        Predict your diabetes risk and get personalized health tips in your language.
+        DiaSaver helps you assess your diabetes risk, spot early symptoms,
+        and follow simple lifestyle steps to stay healthy and in control.
       </p>
 
       <div className="grid">
