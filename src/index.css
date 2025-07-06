@@ -25,6 +25,7 @@ code {
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    border-radius: 20PX;
   }
   .mobile-only {
     display: block;
@@ -66,7 +67,7 @@ code {
     .item-5 {
       grid-column: 3;
       grid-row: 1 / span 3;
-      background-color: #EEESD9;
+      background-color: #E2D9CD;
     }
     @media (min-width: 768px) {
     .grid {
@@ -112,4 +113,12 @@ code {
     }
     
   }
-
+body {
+	background: 
+		  radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) 0 calc(128px/2),
+		  radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) calc(128px/2) 0,
+		  radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
+		  radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
+		  #10a2c02b;
+	background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+}
