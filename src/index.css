@@ -36,31 +36,37 @@ code {
     .item-0 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
+      background-color: antiquewhite;
     }
     
     .item-1 {
       grid-column: 1;
       grid-row: 3;
+      background-color: #D1EBDB;
     }
     
     .item-2 {
       grid-column: 1;
       grid-row: 4 / span 2;
+      background-color: #EFECE9;
     }
     
     .item-3 {
       grid-column: 2;
       grid-row: 3 / span 3;
+      background-color:#98A7B8;
     }
     
     .item-4 {
       grid-column: 3;
       grid-row: 4;
+      background-color: #F0EEF2;
     }
     
     .item-5 {
       grid-column: 3;
       grid-row: 1 / span 3;
+      background-color: #EEESD9;
     }
     @media (min-width: 768px) {
     .grid {
