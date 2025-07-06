@@ -4,7 +4,7 @@ import '../App.css';
 
 function Home() {
   const items = [
-    { id: 0, title: "Start Prediction", icon: "🧪", link: "/predict" },
+    { id: 0, title: "Start Prediction   to endure you have  diabetic", icon: "🧪", link: "/predict" },
     { id: 1, title: "Prevention Tips", icon: "🛡️", link: "/prevention" },
     { id: 2, title: "Check My Risk", icon: "📊", link: "/myrisk" },
     { id: 3, title: "Diabetes Symptoms", icon: "🩺", link: "/symptoms" },
