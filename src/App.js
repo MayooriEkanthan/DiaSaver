@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './pages/Navbar.css'; // ✅ External CSS for navbar
 
-
+// Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -15,14 +16,20 @@ import Language from './pages/Language';
 function App() {
   return (
     <Router>
-      {/* ✅ Show only essential links in nav */}
-      <nav  className="navbar"  style={{ padding: '10px', background: '#eee' }}>
-        <Link to="/" style={{ margin: '0 10px',color:"black" }}>Home</Link>
-        <Link to="/about" style={{ margin: '0 10px',color:"black" }}>About</Link>
-        <Link to="/contact" style={{ margin: '0 10px',color:"black" }}>Contact</Link>
+      {/* ✅ Navbar */}
+      <nav className="navbar">
+        <div className="navbar-logo bordered-logo">
+  DiaSaver
+</div>
+
+        <ul className="navbar-links">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </ul>
       </nav>
 
-      {/* ✅ All routes still work */}
+      {/* ✅ All route paths */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
