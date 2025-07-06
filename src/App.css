@@ -21,7 +21,8 @@ code {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.2; /* adjust for brightness */
+  opacity: 0.2; 
+  /* adjust for brightness */
 }
 
 /* ===== Home Page Layout ===== */
