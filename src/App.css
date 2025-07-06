@@ -1,132 +1,97 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Mathujan's Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  height: 600px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Background colors for each item */
+.item-0 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: antiquewhite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-1 {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #D1EBDB;
 }
-/* mathujan's edit */
-.grid {
-    display: grid;
+
+.item-2 {
+  grid-column: 1;
+  grid-row: 4 / span 2;
+  background-color: #EFECE9;
+}
+
+.item-3 {
+  grid-column: 2;
+  grid-row: 3 / span 3;
+  background-color: #98A7B8;
+}
+
+.item-4 {
+  grid-column: 3;
+  grid-row: 4;
+  background-color: #F0EEF2;
+}
+
+.item-5 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  background-color: #EEDDCC; /* fixed from EEESD9 */
+}
+
+/* Mobile/Desktop view controls */
+.mobile-only {
+  display: block;
+}
+.desktop-only {
+  display: none;
+}
+
+/* Responsive grid settings */
+@media (min-width: 768px) {
+  .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
   }
-  .item {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-  }
+
   .mobile-only {
-    display: block;
-  }
-  .desktop-only {
     display: none;
   }
-  
-    .item-0 {
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 2;
-    }
-    
-    .item-1 {
-      grid-column: 1;
-      grid-row: 3;
-    }
-    
-    .item-2 {
-      grid-column: 1;
-      grid-row: 4 / span 2;
-    }
-    
-    .item-3 {
-      grid-column: 2;
-      grid-row: 3 / span 3;
-    }
-    
-    .item-4 {
-      grid-column: 3;
-      grid-row: 4;
-    }
-    
-    .item-5 {
-      grid-column: 3;
-      grid-row: 1 / span 3;
-    }
-    @media (min-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      gap: 8px;
-    }
-    .mobile-only {
-      display: none;
-    }
-    .desktop-only {
-      display: block;
-    }
-    
-    .item-0 {
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 2;
-    }
-    
-    .item-1 {
-      grid-column: 1;
-      grid-row: 3;
-    }
-    
-    .item-2 {
-      grid-column: 1;
-      grid-row: 4 / span 2;
-    }
-    
-    .item-3 {
-      grid-column: 2;
-      grid-row: 3 / span 3;
-    }
-    
-    .item-4 {
-      grid-column: 3;
-      grid-row: 4;
-    }
-    
-    .item-5 {
-      grid-column: 3;
-      grid-row: 1 / span 3;
-    }
-    
+
+  .desktop-only {
+    display: block;
   }
+}
