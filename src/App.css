@@ -1,19 +1,17 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Mathujan's Grid Layout */
-.grid {
+/* 🔒 Apply grid only inside Home page */
+.home-page .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -22,7 +20,7 @@ code {
   margin-bottom: 20px;
 }
 
-.item {
+.home-page .item {
   color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -34,59 +32,67 @@ code {
   transition: transform 0.2s ease;
 }
 
-/* Background colors for each item */
-.item-0 {
+.home-page .item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Background colors & positions */
+.home-page .item-0 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   background-color: antiquewhite;
 }
 
-.item-1 {
+.home-page .item-1 {
   grid-column: 1;
   grid-row: 3;
   background-color: #D1EBDB;
 }
 
-.item-2 {
+.home-page .item-2 {
   grid-column: 1;
   grid-row: 4 / span 2;
   background-color: #EFECE9;
 }
 
-.item-3 {
+.home-page .item-3 {
   grid-column: 2;
   grid-row: 3 / span 3;
   background-color: #98A7B8;
 }
 
-.item-4 {
+.home-page .item-4 {
   grid-column: 3;
   grid-row: 4;
   background-color: #F0EEF2;
 }
 
-.item-5 {
+.home-page .item-5 {
   grid-column: 3;
   grid-row: 1 / span 3;
-  background-color: #EEDDCC; /* fixed from EEESD9 */
+  background-color: #EEDDCC;
 }
 
-/* Mobile/Desktop view controls */
-.mobile-only {
-  display: block;
-}
-.desktop-only {
-  display: none;
-}
-
-/* Responsive grid settings */
+/* Responsive settings */
 @media (min-width: 768px) {
-  .grid {
+  .home-page .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
   }
+}
 
+/* Optional: mobile/desktop toggles if you use them */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
   .mobile-only {
     display: none;
   }

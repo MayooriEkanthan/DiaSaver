@@ -9,6 +9,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+
     monospace;}
 /* mathujan's code */
 .grid {
@@ -121,4 +122,5 @@ body {
 		  radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
 		  #10a2c02b;
 	background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+
 }
