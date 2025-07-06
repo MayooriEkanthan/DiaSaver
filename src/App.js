@@ -14,18 +14,14 @@ import Language from './pages/Language';
 function App() {
   return (
     <Router>
+      {/* ✅ Show only essential links in nav */}
       <nav style={{ padding: '10px', background: '#eee' }}>
         <Link to="/" style={{ margin: '0 10px' }}>Home</Link>
         <Link to="/about" style={{ margin: '0 10px' }}>About</Link>
         <Link to="/contact" style={{ margin: '0 10px' }}>Contact</Link>
-        <Link to="/predict" style={{ margin: '0 10px' }}>Predict</Link>
-        <Link to="/prevention" style={{ margin: '0 10px' }}>Prevention</Link>
-        <Link to="/myrisk" style={{ margin: '0 10px' }}>My Risk</Link>
-        <Link to="/symptoms" style={{ margin: '0 10px' }}>Symptoms</Link>
-        <Link to="/testing" style={{ margin: '0 10px' }}>Testing</Link>
-        <Link to="/language" style={{ margin: '0 10px' }}>Language</Link>
       </nav>
 
+      {/* ✅ All routes still work */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
