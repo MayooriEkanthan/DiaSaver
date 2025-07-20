@@ -1,7 +1,8 @@
 .predict-page {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   padding: 20px;
+  background-color:#EBE3DB;
 }
 
 .predict-page form input,
@@ -12,6 +13,7 @@
   margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+
 }
 
 .predict-page form button {
@@ -20,4 +22,5 @@
   color: white;
   border: none;
   cursor: pointer;
+    margin-right: 5px;
 }

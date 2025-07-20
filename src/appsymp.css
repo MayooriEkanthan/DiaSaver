@@ -1,0 +1,40 @@
+/* Style for all cards */
+.item {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 🌟 Style only the Diabetes Symptoms card (item with id 3) */
+.item-3 {
+  background: #fff4f4; /* light red-pinkish bg to indicate health warning */
+  border: 1px solid #ffaaaa;
+}
+
+.item-3 h3 {
+  color: #cc0000;
+}
+
+.item-3 p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.item-3 div:first-child {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+

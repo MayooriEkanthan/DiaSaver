@@ -1,0 +1,53 @@
+/* Container for the card */
+.predi {
+  background-color:#EBE3DB;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+.predi h2 {
+  font-size: 28px;
+  color: #0e5e6f;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.predi h4 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+.predi p {
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 600px) {
+  .predi {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .predi h2 {
+    font-size: 24px;
+  }
+
+  .predi h4 {
+    font-size: 18px;
+  }
+
+  .predi p {
+    font-size: 15px;
+  }
+}
