@@ -1,19 +1,20 @@
 .navbar {
-  background: rgba(229, 236, 239, 0.4); /* semi-transparent white */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
-  border-bottom: 1px solid rgba(247, 239, 239, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-  padding: 25px 30px;
+  background-color: rgba(255, 255, 255, 0.15); /* translucent effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw; /* FULL width */
   z-index: 1000;
-  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0; /* remove curve */
+  margin: 0; /* remove gap from parent */
 }
 
 

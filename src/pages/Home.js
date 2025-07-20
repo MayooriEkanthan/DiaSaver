@@ -67,12 +67,14 @@ function Home() {
       </video>
 
       {/* ✅ Content */}
-      <h2>
-        Welcome to <strong>DiaSaver</strong>
-      </h2>
+      
+        <h1 className="home-heading">
+          Welcome to <span className="brand-highlight">DiaSaver</span>
+        </h1>
+
+      
       <p className="subtitle">
-        DiaSaver helps you assess your diabetes risk, spot early symptoms,
-        and follow simple lifestyle steps to stay healthy and in control.
+        DiaSaver helps you assess your diabetes risk, spot early symptoms, and follow simple lifestyle steps to stay healthy and in control.
       </p>
 
       <div className="grid">
