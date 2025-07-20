@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './pages/Navbar.css'; // ✅ External CSS for navbar
 
 // Pages
@@ -18,14 +18,24 @@ function App() {
     <Router>
       {/* ✅ Navbar */}
       <nav className="navbar">
-        <div className="navbar-logo bordered-logo">
-  DiaSaver
-</div>
+        <div className="navbar-logo bordered-logo">DiaSaver</div>
 
         <ul className="navbar-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
