@@ -12,7 +12,17 @@ function Predict() {
     DiabetesPedigreeFunction: '',
     Age: '',
   });
-
+ // 📝 Placeholders for each field
+ const placeholders = {
+  Pregnancies: 'Number of pregnancies if you are a man put "0"',
+  Glucose: 'Plasma glucose concentration',
+  BloodPressure: '120/80  - put Diastolic blood pressure(80) -(mm Hg)',
+  SkinThickness: 'Triceps skin fold thickness, skin thickness of average human is between 0.5 - 4(mm)',
+  Insulin: '2-Hour serum insulin (mu U/ml)',
+  BMI: 'Body mass index (weight/height²)',
+  DiabetesPedigreeFunction: 'Family risk score based on relatives with diabetes.The number is usually between 0.0 and 2.5.',
+  Age: 'Age in years',
+};
   const [result, setResult] = useState(null);
 
   const handleChange = (e) => {
