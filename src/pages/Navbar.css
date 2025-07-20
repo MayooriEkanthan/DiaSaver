@@ -1,48 +1,98 @@
+/* ===== Reset & Base ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: transparent !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* ===== Navbar Styles ===== */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.15); /* translucent effect */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  width: 100vw; /* FULL width */
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* remove curve */
-  margin: 0; /* remove gap from parent */
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: rgba(10, 25, 47, 0.95); /* Initial dark background */
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-
-.navbar-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #0d9488;
+/* ✅ Slight color change when cursor is near the navbar */
+.navbar:hover {
+  background: rgba(15, 35, 65, 0.95);
 }
 
-.navbar-links {
+/* Logo */
+.navbar .logo,
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #00e0c6;
+  letter-spacing: 1px;
+}
+
+/* Nav list */
+.navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links a {
+/* Nav links */
+.navbar ul li a {
   text-decoration: none;
-  color: #1e3a8a;
   font-weight: 500;
-  transition: color 0.2s ease;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 0;
+  transition: color 0.3s ease;
+  background: none !important;
 }
 
-.navbar-links a:hover {
-  color: #0f766e;
+/* ❌ No box or background on click */
+.navbar ul li a:active {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* ✅ No hover box — only color stays clean */
+.navbar ul li a:hover {
+  color: #00e0c6;
+}
+
+/* ✅ Active route (highlighted route without box) */
+.navbar ul li a.active,
+.navbar-links a.active {
+  color: #00e0c6 !important;
 }
