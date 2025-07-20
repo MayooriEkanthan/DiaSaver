@@ -1,17 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaVial,
-  FaShieldAlt,
-  FaChartBar,
-  FaStethoscope,
-  FaMapMarkerAlt,
-  FaGlobe,
+  FaVial, FaShieldAlt, FaChartBar,
+  FaStethoscope, FaMapMarkerAlt, FaGlobe,
 } from 'react-icons/fa';
-
 import './Home.css';
 
 function Home() {
+  const [activeItem, setActiveItem] = useState(null);
+
   const items = [
     {
       id: 0,
@@ -39,8 +36,7 @@ function Home() {
       title: 'Diabetes Symptoms',
       icon: <FaStethoscope />,
       link: '/symptoms',
-      description:
-        'Understand the early warning signs like thirst, fatigue, and vision changes.',
+      description: 'Understand the early warning signs like thirst, fatigue, and vision changes.',
     },
     {
       id: 4,
@@ -60,26 +56,27 @@ function Home() {
 
   return (
     <div className="home-page">
-      {/* ✅ Background video behind all */}
       <video autoPlay loop muted playsInline className="background-video">
         <source src="/bg-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* ✅ Content */}
-      
-        <h1 className="home-heading">
-          Welcome to <span className="brand-highlight">DiaSaver</span>
-        </h1>
+      <h1 className="home-heading">
+        Welcome to <span className="brand-highlight">DiaSaver</span>
+      </h1>
 
-      
       <p className="subtitle">
         DiaSaver helps you assess your diabetes risk, spot early symptoms, and follow simple lifestyle steps to stay healthy and in control.
       </p>
 
       <div className="grid">
         {items.map((item) => (
-          <Link to={item.link} key={item.id} className={`item item-${item.id}`}>
+          <Link
+            to={item.link}
+            key={item.id}
+            className={`item item-${item.id} ${activeItem === item.id ? 'clicked' : ''}`}
+            onClick={() => setActiveItem(item.id)}
+          >
             <div className="icon">{item.icon}</div>
             <h3>{item.title}</h3>
             <p className="desc">{item.description}</p>
