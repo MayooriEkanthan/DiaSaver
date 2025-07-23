@@ -9,6 +9,7 @@ CORS(app)  # Let React talk to Flask
 
 # ✅ Load your trained model
 model = joblib.load("diabetes_model.pkl")
+print("Model loaded successfully!")  # Print confirmation when the model is loaded
 
 # ✅ Define a route for prediction
 @app.route('/predict', methods=['POST'])

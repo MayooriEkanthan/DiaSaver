@@ -1,26 +1,86 @@
 .predict-page {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
-  background-color:#EBE3DB;
+  background: linear-gradient(135deg, #a0e9fd 0%, #ffffff 100%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Adds space between the navbar and the prediction box */
 }
 
-.predict-page form input,
-.predict-page form select {
+.predict-page h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.predict-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each input */
+}
+
+.predict-page form .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.predict-page form label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px; /* Ensures the label doesn't stick to the input */
+}
+
+/* Styling for individual input fields as separate bars */
+.predict-page form input {
   width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-
+  padding: 12px;
+  border-radius: 10px; /* Slightly smaller radius for a modern look */
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
 }
 
+/* Focus effect for input fields */
+.predict-page form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background-color: #f5f5f5; /* Light background change on focus */
+}
+
+/* Styling for placeholder text */
+.predict-page form input::placeholder {
+  font-size: 14px; /* Placeholder text size */
+  color: #888; /* Slightly lighter color for placeholders */
+  opacity: 1; /* Ensure the placeholder is fully visible */
+}
+
+/* Button Styling */
 .predict-page form button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
-    margin-right: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.predict-page form button:hover {
+  background-color: #45a049;
+}
+
+.predict-page .result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
 }

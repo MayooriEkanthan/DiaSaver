@@ -1,0 +1,56 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+.language-container {
+  padding: 40px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+  margin-bottom: 100px;
+  margin-top: 80px; /* Space between navbar and content */
+}
+
+/* Main heading styling */
+.language-container h2 {
+  color: #00695c; /* Dark teal color */
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Paragraph text styling */
+.language-container p {
+  font-size: 16px;
+  color: #333; /* Dark text color */
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+/* Link styling */
+.language-container a {
+  color: #0288d1; /* Blue link color */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.language-container a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  .language-container h2 {
+    font-size: 28px; /* Smaller heading size for mobile */
+  }
+
+  .language-container p {
+    font-size: 14px; /* Smaller font size for paragraphs */
+  }
+}

@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   left: 0;
+  height: 80px; 
   width: 100%;
   padding: 1rem 2rem;
   display: flex;
@@ -54,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 .navbar .navbar-logo {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #00e0c6;
+  color: #fcfcfc;
   letter-spacing: 1px;
 }
 

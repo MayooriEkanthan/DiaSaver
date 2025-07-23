@@ -19,32 +19,37 @@ function Home() {
     { id: 5, title: 'Languages & Help', icon: <FaGlobe />, link: '/language', description: 'Switch between Tamil, Sinhala, or English. Get support.' },
   ];
 
+  const handleItemClick = (id) => {
+    setActiveItem(id); // Set the clicked item as active
+  };
+
   return (
-    <div className="home-page">
-      <video autoPlay loop muted playsInline className="background-video">
+    <div className="home-container">
+      <video className="background-video" autoPlay loop muted>
         <source src="/bg-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
-      <h1 className="home-heading">
-        Welcome to <span className="brand-highlight">DiaSaver</span>
-      </h1>
-      <p className="subtitle">
-        DiaSaver helps you assess your diabetes risk, spot early symptoms, and follow simple lifestyle steps to stay healthy and in control.
-      </p>
+      <div className="content">
+        <h1>Welcome to DiaSaver</h1> {/* Main title */}
+        <h2 className="subtitle">
+          Your trusted tool for diabetes risk assessment and prevention.
+        </h2> {/* Sub-sentence */}
 
-      <div className="grid">
-        {items.map((item) => (
-          <Link
-            to={item.link}
-            key={item.id}
-            className={`item item-${item.id} ${activeItem === item.id ? 'clicked' : ''}`}
-            onClick={() => setActiveItem(item.id)} // Update active item on click
-          >
-            <div className="icon">{item.icon}</div>
-            <h3>{item.title}</h3>
-            <p className="desc">{item.description}</p>
-          </Link>
-        ))}
+        <div className="grid">
+          {items.map((item) => (
+            <Link
+              to={item.link}
+              key={item.id}
+              className={`item item-${item.id} ${activeItem === item.id ? 'clicked' : ''}`}
+              onClick={() => handleItemClick(item.id)} // Update active item on click
+            >
+              <div className="icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p className="desc">{item.description}</p>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

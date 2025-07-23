@@ -1,0 +1,99 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General layout for the Nearbytest container */
+.nearby-container {
+  padding: 40px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+  margin-bottom: 100px;
+  margin-top: 80px; /* Space between navbar and content */
+}
+
+/* Main heading */
+.nearby-container h2 {
+  color: #00695c; /* Dark teal color */
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Paragraphs inside the container */
+.nearby-container p {
+  font-size: 16px;
+  color: #333; /* Dark text color */
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+/* Hospital list section - Grid layout */
+.hospital-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Create columns of minimum 280px width */
+  gap: 20px; /* Space between grid items */
+  margin-top: 20px;
+}
+
+/* Heading for the hospital list */
+.hospital-list h3 {
+  font-size: 24px;
+  color: #00695c; /* Dark teal color */
+  margin-bottom: 20px;
+  text-align: center;
+  grid-column: span 2; /* Make the heading span across two columns */
+}
+
+/* Style for the hospital item in the grid */
+.hospital-list li {
+  background-color: #f5f5f5; /* Light gray background for the hospital items */
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the hospital items */
+.hospital-list li:hover {
+  transform: translateY(-5px); /* Lift the item on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Style for links (hospitals' Google Maps links) */
+.hospital-list a {
+  text-decoration: none;
+  color: #0288d1; /* Blue link color */
+  font-weight: bold;
+  display: block; /* Make the link fill the entire space of the item */
+  text-align: center;
+}
+
+/* Hover effect for links */
+.hospital-list a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+  .nearby-container h2 {
+    font-size: 28px; /* Smaller heading size for mobile */
+  }
+
+  .nearby-container p {
+    font-size: 14px; /* Smaller font size for paragraphs */
+  }
+
+  .hospital-list h3 {
+    font-size: 20px; /* Smaller heading size for hospital list */
+  }
+
+  .hospital-list li {
+    font-size: 14px; /* Smaller font size for list items */
+  }
+}

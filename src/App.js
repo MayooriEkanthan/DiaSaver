@@ -44,7 +44,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/predict" element={<Predict />} />
+        <Route path="/predict" element={<Predict />} /> {/* Keep Predict as a separate page */}
         <Route path="/prevention" element={<Prevention />} />
         <Route path="/myrisk" element={<MyRisk />} />
         <Route path="/symptoms" element={<Symptoms />} />

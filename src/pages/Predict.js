@@ -36,6 +36,18 @@ function Predict() {
     }
   };
 
+  // Placeholder text mapping for each field
+  const placeholders = {
+    Pregnancies: 'Enter the number of pregnancies: (If you are a man, this value is 0. If you are a woman, please enter your count.)',
+    Glucose: 'Enter glucose level: (mg/dL - milligrams per deciliter) - (Plasma glucose concentration a 2 hours in an oral glucose tolerance test)',
+    BloodPressure: 'Enter Diastolic blood pressure: (mm Hg - millimeters of mercury) - (120/80 mm Hg - 80 is the diastolic blood pressure',
+    SkinThickness: 'Enter skin thickness:(mm - millimeters) Triceps skin fold thickness',
+    Insulin: 'Enter insulin level: (micro U/mL - micro units per milliliter) - (2-Hour serum insulin)',
+    BMI: 'Enter BMI value: (kg/m*2)- (BMI= weight/height*2)',
+    DiabetesPedigreeFunction: 'Enter diabetes pedigree function: (A funtion which scores likelihood of diabetes based on family history, normal range can be within 0-2.5',
+    Age: 'Enter your age(years):',
+  };
+
   return (
     <div className="predict-page">
       <h2>🧪 Start Your Diabetes Prediction</h2>
@@ -49,6 +61,7 @@ function Predict() {
               value={form[field]}
               onChange={handleChange}
               required
+              placeholder={placeholders[field]} // Add placeholder for each field
             />
           </div>
         ))}
