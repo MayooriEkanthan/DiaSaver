@@ -1,163 +1,229 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* AboutUs CSS */
+/* Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #46021a;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 0;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/* Container Styling */
+/* Main About Container */
 .about-container {
   padding: 4rem 2rem;
   text-align: center;
   color: white;
-  background:  #46021a 100%; 
+  background: #46021a;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  font-family: 'Roboto', sans-serif;
+  margin-top: 60px; /* or increase as needed */
+
 }
 
-/* Header Styling */
-.header-section h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  color: #00e0c6; /* Fresh color accent */
-  font-weight: 700;
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 60px;
+  user-select: none;
+  
  
 }
 
+.header-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.0rem;
+  color:  #00e0c6;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.3);
+  
+
+}
+
 .tagline {
-  font-size: 1.5rem;
-  color: #777; /* Soft text color for tagline */
+  font-size: 1.4rem;
+  font-family:'Montserrat', sans-serif;
   font-weight: 400;
-  letter-spacing: 1px;
-  margin-top: 0.5rem;
+  color: #a09a9a;
+  letter-spacing: 0.04em;
+  text-align: center; /* ✅ Center the text */
+  margin: 0 auto;
+  margin-bottom: 0.1 rem; /* 🔻 Reduce bottom space */ 
 }
 
-/* Card Styling (Common for each section) */
+/* Cards */
 .card {
+  width: 65%;
   padding: 2.5rem;
-  width: 90%;
-  max-width: 1000px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #a0e9fd 100%);
   color: #333;
-  background: linear-gradient(135deg, #ffffff 0%, #a0e9fd 100%); /* Gradient background for outer cards */
+  box-shadow: 0 8px 25px rgba(30, 72, 139, 0.15),
+              0 4px 12px rgba(30, 72, 139, 0.1);
   transition: box-shadow 0.3s ease;
+  margin-bottom: 1px;
 }
 
-/* No Hover Effect for Outer Cards */
 .card:hover {
-  transform: none; /* No pop-out effect */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Slight shadow effect */
+  box-shadow: 0 16px 40px rgba(30, 72, 139, 0.25),
+              0 8px 20px rgba(30, 72, 139, 0.15);
 }
 
-/* Features Section */
-.features-card h2 {
+/* Paragraphs */
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.11rem;
+  color: #34495e;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+/* Section Headings */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 2.5rem;
-  color: #18235e;
-  margin-bottom: 1.5rem;
+  color: #003366;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
 }
 
+/* Features Grid */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
-/* Gradient background for feature cards */
 .feature-item {
-  background: linear-gradient(135deg, #ffffff 0%, #0a1f3c 100%); /* Gradient background for feature items */
+  background: linear-gradient(135deg, #ffffff 0%, #0a1f3c 100%);
   padding: 2rem;
   border-radius: 10px;
-  color: #fff; /* White text for better contrast */
+  color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for feature cards */
 .feature-item:hover {
-  transform: scale(1.05); /* Slightly enlarge the feature card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .feature-item h3 {
   font-size: 1.5rem;
-  color: #fff; /* Consistent white text */
   margin-bottom: 1rem;
 }
 
 .feature-item p {
   font-size: 1rem;
-  color: #ddd; /* Slightly lighter text for better readability */
+  color: #ddd;
 }
 
 /* Mission Section */
 .mission-card h2 {
   font-size: 2.5rem;
-  color: #18235e;
+  color: #003366;
   margin-bottom: 1rem;
 }
 
 .mission-card p {
   font-size: 1.2rem;
-  color: #777;
+  color:  #34495e;
   margin-bottom: 1.5rem;
 }
 
 /* Footer Section */
+.footer-message {
+  text-align: center;
+  color: #d4d4d4;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  line-height: 1.75;
+}
+
 .footer-message h2 {
   font-size: 2.5rem;
-  color: #18235e;
+  color:   #003366 ;
   margin-bottom: 1rem;
 }
 
 .footer-message p {
   font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
 }
 
-/* Common contact styles (for footer) */
+/* Contact Info */
 .common-contact h2 {
-  color: #00e0c6;
+  color:   #00e0c6;
   margin-bottom: 1rem;
 }
 
 .common-contact p {
   margin: 0.5rem 0;
+  color: #ddd;
 }
 
 .common-contact p a {
   color: #00e0c6;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
 }
 
 .common-contact p a:hover {
-  text-decoration: underline; /* Underline on hover for clarity */
+  text-decoration: underline;
 }
 
-/* Remove underlines from all links globally */
+/* Remove underlines globally */
 a {
-  text-decoration: none !important; /* Ensure no underlines for links globally */
+  text-decoration: none !important;
 }
 
-/* For links inside the feature-item class */
-.feature-item a {
-  text-decoration: none !important; /* Ensure no underlines for links in feature items */
-}
-
-/* Optional: On hover, you can add the underline */
 a:hover {
   text-decoration: underline;
 }
 
-/* Responsive adjustments for Smaller Screens */
+/* Responsive */
 @media (max-width: 768px) {
   .about-container {
     padding: 2rem;
   }
 
+  .header-section h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p,
+  .footer-message {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
   .card {
-    width: 100%;
+    padding: 25px 30px;
   }
 
   .features-grid {
@@ -167,240 +233,27 @@ a:hover {
   .feature-item {
     padding: 1.5rem;
   }
-
-  .common-contact p {
-    font-size: 1rem; /* Smaller font size on smaller screens */
-  }
-
-  .footer-message h2 {
-    font-size: 2rem; /* Adjust header size for small screens */
-  }
-
-  .footer-message p {
-    font-size: 1rem; /* Adjust text size for smaller screens */
-  }
-}
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Body and container */
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #e9f2ff;
-  color: #2c3e50;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 60px 15px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  max-width: 900px;
-  width: 100%;
-  padding: 0 15px;
-  position: relative;
-}
-
-/* Cards style */
-.card {
-  background: #ffffff;
-  border-radius: 24px;
-  box-shadow:
-    0 8px 25px rgba(30, 72, 139, 0.15),
-    0 4px 12px rgba(30, 72, 139, 0.1);
-  padding: 30px 40px;
-  margin-bottom: 40px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.card:hover {
-  box-shadow:
-    0 16px 40px rgba(30, 72, 139, 0.25),
-    0 8px 20px rgba(30, 72, 139, 0.15);
-}
-
-/* Header Section */
-.header-section {
-  text-align: center;
-  margin-bottom: 60px;
-  user-select: none;
-}
-
-.header-section h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 3.8rem;
-  color: #2c3e50;
-  letter-spacing: 0.05em;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 6px rgba(30, 72, 139, 0.2);
-}
-
-.tagline {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #3f5770;
-  letter-spacing: 0.04em;
-  user-select: none;
-}
-
-/* Paragraphs */
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1.15rem;
-  color: #34495e;
-  max-width: 720px;
-  margin: 0 auto;
-  line-height: 1.7;
-  text-align: justify;
-  text-justify: inter-word;
-  position: relative;
-  z-index: 1;
-}
-
-/* Headings */
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #1e488b;
-  margin-bottom: 25px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  user-select: none;
-  text-shadow: 1px 1px 5px rgba(30, 72, 139, 0.2);
-}
-
-/* Features list */
-.features-list {
-  list-style: none;
-  max-width: 700px;
-  margin: 0 auto;
-  padding-left: 0;
-}
-
-.features-list li {
-  background: #f0f6ff;
-  border: 1px solid #d3e0f7;
-  border-radius: 16px;
-  padding: 18px 25px 18px 60px;
-  margin-bottom: 22px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #2c3e50;
-  position: relative;
-  cursor: default;
-  transition: background 0.3s ease, border-color 0.3s ease;
-  box-shadow:
-    0 2px 8px rgba(30, 72, 139, 0.07);
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.features-list li:hover {
-  background: #d9e8ff;
-  border-color: #1e488b;
-  box-shadow:
-    0 6px 20px rgba(30, 72, 139, 0.15);
-  color: #1e488b;
-}
-
-/* Icon boxes with emoji inside */
-.icon-box {
-  flex-shrink: 0;
-  background: #1e488b;
-  color: white;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  font-size: 22px;
-  line-height: 38px;
-  text-align: center;
-  box-shadow:
-    0 2px 10px rgba(30, 72, 139, 0.3);
-  user-select: none;
-  transition: background 0.3s ease;
-}
-
-.features-list li:hover .icon-box {
-  background: #3a5f9e;
-  box-shadow:
-    0 4px 16px rgba(58, 95, 158, 0.4);
-}
-
-/* Footer message */
-.footer-message {
-  text-align: center;
-  color: #1e2a47;
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: 0.04em;
-  line-height: 1.75;
-  user-select: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .header-section h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  p, .footer-message {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-  .card {
-    padding: 25px 30px;
-    margin-bottom: 35px;
-  }
-  .features-list li {
-    font-size: 1rem;
-  }
-  .icon-box {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    line-height: 32px;
-  }
 }
 
 @media (max-width: 480px) {
   .header-section h1 {
     font-size: 2.4rem;
   }
+
   h2 {
     font-size: 1.6rem;
   }
-  .features-list li {
-    font-size: 0.95rem;
-    padding-left: 20px;
-    gap: 12px;
-  }
-  .icon-box {
-    width: 28px;
-    height: 28px;
-    font-size: 16px;
-    line-height: 28px;
-  }
+
   .card {
     padding: 20px 25px;
     margin-bottom: 30px;
   }
+
+  .feature-item {
+    padding: 1.2rem;
+  }
+
   .footer-message {
     font-size: 1rem;
   }
 }
-

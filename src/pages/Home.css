@@ -9,7 +9,7 @@
   height: 100vh; /* Full viewport height */
   color: white;
   margin-top: 90px; /* Add space between navbar and welcome section */
-  position: relative; /* Ensures content sits on top of video */
+  /*position: relative;  Ensures content sits on top of video */
   overflow: hidden; /* Prevents content from going outside */
 }
 
