@@ -122,6 +122,11 @@ For clinical use, consult a healthcare professional.
 
 ## Screenshots
 <img width="1908" height="932" alt="Screenshot 2025-07-25 123507" src="https://github.com/user-attachments/assets/0f2621b8-4dc5-4045-824b-7145500f2d47" />
+<img width="1900" height="775" alt="Screenshot 2025-07-25 123524" src="https://github.com/user-attachments/assets/5cd6f6c5-ab0f-4c4b-a42f-bab550fa8492" />
+<img width="1914" height="929" alt="Screenshot 2025-07-25 123541" src="https://github.com/user-attachments/assets/fcd91cf8-2885-4435-b60b-bed52c315193" />
+<img width="1911" height="921" alt="Screenshot 2025-07-25 123613" src="https://github.com/user-attachments/assets/24342081-ee5c-4cb4-aad3-711c1c038311" />
+
+
 
 
 
