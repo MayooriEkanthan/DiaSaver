@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* AboutUs CSS */
 
 /* Container Styling */
@@ -180,7 +180,6 @@ a:hover {
     font-size: 1rem; /* Adjust text size for smaller screens */
   }
 }
-=======
 /* Reset */
 * {
   box-sizing: border-box;
@@ -404,4 +403,4 @@ h2 {
     font-size: 1rem;
   }
 }
->>>>>>> 38931f3a9fbcade208a9354dca00d15ba2e148dd
+
