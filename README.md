@@ -121,8 +121,9 @@ For clinical use, consult a healthcare professional.
 ---
 
 ## Screenshots
+<img width="1908" height="932" alt="Screenshot 2025-07-25 123507" src="https://github.com/user-attachments/assets/0f2621b8-4dc5-4045-824b-7145500f2d47" />
 
-![luffy-vs-kaido-one-3840x2160-18361](https://github.com/user-attachments/assets/8bf50d94-dee6-4ef4-8876-f0411a4e9424)
+
 
 
 ---
