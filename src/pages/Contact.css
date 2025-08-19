@@ -1,0 +1,196 @@
+/* Container for the entire contact section */
+.contact-container {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 80px; /* Adjust this value to control the gap between the navbar and the contact section */
+  background-color: #46021a; 
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #00e0c6;
+  margin-bottom: 2rem;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+/* Individual Team Card */
+.team-card {
+  background: linear-gradient(135deg, #ffffff 0%, #a0e9fd 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 280px;
+  text-align: center;
+}
+
+/* Hover and Click Effect for Team Cards */
+.team-card:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Style for clicked team card */
+.team-card.clicked {
+  border: 2px solid #00e0c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Highlight the clicked card */
+}
+
+/* Team Photo */
+.team-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+/* Team Name and Contact Information */
+.team-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* Contact Details Section */
+.contact-details {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #b8b6b6;
+}
+
+.contact-details h2 {
+  font-size: 2rem;
+  color: #00e0c6;
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+  margin-bottom: 3rem;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #cbc9c9;
+}
+
+/* Social Media Section */
+.social-media {
+  margin-top: 2rem;
+}
+
+.social-media h3 {
+  font-size: 1.8rem;
+  color: #00e0c6;
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  display: block;
+  font-size: 1.2rem;
+  color: #cbc9c9;
+  margin: 0.5rem 0;
+}
+
+.social-media a:hover {
+  color: #2b22af;
+}
+
+/* Contact Form Section */
+.contact-form {
+  margin-top: 3rem;
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  color: #00e0c6;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #727272;
+  
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #00e0c6;
+  color: rgb(16, 16, 16);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #00b3a6;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Stack team cards vertically on smaller screens */
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr; /* Stack contact info items vertically */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem; /* Smaller text for mobile */
+  }
+
+  .contact-form button {
+    font-size: 0.9rem; /* Smaller button text for mobile */
+  }
+}

@@ -1,0 +1,259 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #46021a;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 0;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main About Container */
+.about-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  background: #46021a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 60px; /* or increase as needed */
+
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 60px;
+  user-select: none;
+  
+ 
+}
+
+.header-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.0rem;
+  color:  #00e0c6;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.3);
+  
+
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #a09a9a;
+  letter-spacing: 0.04em;
+  text-align: center; /* ✅ Center the text */
+  margin: 0 auto;
+  margin-bottom: 0.1 rem; /* 🔻 Reduce bottom space */ 
+}
+
+/* Cards */
+.card {
+  width: 65%;
+  padding: 2.5rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #a0e9fd 100%);
+  color: #333;
+  box-shadow: 0 8px 25px rgba(30, 72, 139, 0.15),
+              0 4px 12px rgba(30, 72, 139, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 1px;
+}
+
+.card:hover {
+  box-shadow: 0 16px 40px rgba(30, 72, 139, 0.25),
+              0 8px 20px rgba(30, 72, 139, 0.15);
+}
+
+/* Paragraphs */
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.11rem;
+  color: #34495e;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+/* Section Headings */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.feature-item {
+  background: linear-gradient(135deg, #ffffff 0%, #0a1f3c 100%);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Mission Section */
+.mission-card h2 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.mission-card p {
+  font-size: 1.2rem;
+  color:  #34495e;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Section */
+.footer-message {
+  text-align: center;
+  color: #d4d4d4;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  line-height: 1.75;
+}
+
+.footer-message h2 {
+  font-size: 2.5rem;
+  color:   #003366 ;
+  margin-bottom: 1rem;
+}
+
+.footer-message p {
+  font-size: 1.1rem;
+}
+
+/* Contact Info */
+.common-contact h2 {
+  color:   #00e0c6;
+  margin-bottom: 1rem;
+}
+
+.common-contact p {
+  margin: 0.5rem 0;
+  color: #ddd;
+}
+
+.common-contact p a {
+  color: #00e0c6;
+  text-decoration: none;
+}
+
+.common-contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Remove underlines globally */
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem;
+  }
+
+  .header-section h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p,
+  .footer-message {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 25px 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-section h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 20px 25px;
+    margin-bottom: 30px;
+  }
+
+  .feature-item {
+    padding: 1.2rem;
+  }
+
+  .footer-message {
+    font-size: 1rem;
+  }
+}
