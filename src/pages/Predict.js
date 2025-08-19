@@ -70,6 +70,7 @@ function Predict() {
               name={field}
               value={form[field]}
               onChange={handleChange}
+              placeholder={placeholders[field]} 
               required
               placeholder={placeholders[field]} // Add placeholder for each field
             />

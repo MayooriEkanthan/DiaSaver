@@ -129,9 +129,185 @@ code {
   margin-bottom: 10px;
 }
 
+<<<<<<< Updated upstream
 .bento-card h3 {
   color: #ffffff;
   font-size: 1.2rem;
+=======
+/* ===== Item Colors ===== */
+.home-page .item-0 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: antiquewhite;
+  color: rgb(129, 77, 10);
+}
+
+.home-page .item-1 {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #D1EBDB;
+  color: #0fc856f2;
+}
+
+.home-page .item-2 {
+  grid-column: 1;
+  grid-row: 4 / span 2;
+  background-color: #EFECE9;
+  color: #070708;
+}
+
+.home-page .item-3 {
+  grid-column: 2;
+  grid-row: 3 / span 3;
+  background-color: #98A7B8;
+  color: #033369;
+}
+
+.home-page .item-4 {
+  grid-column: 3;
+  grid-row: 4;
+  background-color: #F0EEF2;
+  color: #441c6c;
+}
+
+.home-page .item-5 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  background-color: #EEDDCC;
+  color: #333;
+}
+
+/* ===== Responsive Grid Fix ===== */
+@media (max-width: 768px) {
+  .home-page .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  
+    .item-0 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      background-color: antiquewhite;
+     
+    
+    }
+    
+    .item-1 {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: #D1EBDB;
+    }
+    
+    .item-2 {
+      grid-column: 1;
+      grid-row: 4 / span 2;
+      background-color: #EFECE9;
+      background-image: url(/public/pic2.jpg) ;
+      background-size:cover; 
+    }
+    
+    .item-3 {
+      grid-column: 2;
+      grid-row: 3 / span 3;
+      background-color:#98A7B8;
+      
+    }
+    
+    .item-4 {
+      grid-column: 3;
+      grid-row: 4;
+      background-color: #F0EEF2; 
+      
+    }
+    
+    .item-5 {
+      grid-column: 3;
+      grid-row: 1 / span 3;
+      background-image: url(/public/PIC\ 1.avif);
+     
+    }
+    @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .mobile-only {
+      display: none;
+    }
+    .desktop-only {
+      display: block;
+    }
+    
+    .item-0 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+    
+    .item-1 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    
+    .item-2 {
+      grid-column: 1;
+      grid-row: 4 / span 2;
+    }
+    
+    .item-3 {
+      grid-column: 2;
+      grid-row: 3 / span 3;
+    }
+    
+    .item-4 {
+      grid-column: 3;
+      grid-row: 4;
+    }
+    
+    .item-5 {
+      grid-column: 3;
+      grid-row: 1 / span 3;
+    }
+    
+  }
+body {
+	background: 
+		  radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) 0 calc(128px/2),
+		  radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%) calc(128px/2) 0,
+		  radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
+		  radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#E5C5D4 54% 57%,#0000 59%),
+		  #81bcc82b;
+	background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+}
+/* App.css */
+
+=======
+/* ===== Navbar Styles ===== */
+>>>>>>> 7eaa3d1dc25d3479b9af196c3d2fdcf13c1daa
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-size: 24px;
+>>>>>>> Stashed changes
   font-weight: 600;
   margin-bottom: 5px;
 }
