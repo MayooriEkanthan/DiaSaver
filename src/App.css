@@ -1,17 +1,36 @@
 /* ===== Reset & Base ===== */
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background: transparent; /* ✅ Make sure background video shows */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow-x: hidden;
+  background: transparent;
 }
 
+
+/* Prevent scrollbars from stacking */
+* {
+  box-sizing: inherit;
+}
+
+/* Remove default scrollbars on x-axis */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+/* ===== Code Font Style ===== */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+<<<<<<< HEAD
 /* ===== Background Video ===== */
 .background-video {
   position: fixed;
@@ -229,6 +248,9 @@ body {
 }
 /* App.css */
 
+=======
+/* ===== Navbar Styles ===== */
+>>>>>>> 7eaa3d1dc25d3479b9af196c3d2fdcf13c1daad7
 .navbar {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
@@ -245,7 +267,7 @@ body {
 
 .navbar-logo {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   color: #0d9488;
 }
 
@@ -253,6 +275,8 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links a {
